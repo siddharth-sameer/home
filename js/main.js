@@ -342,8 +342,8 @@ $(document).ready(function() {
 
         function init() {
             var mapOptions = {
-                zoom: 11,
-                center: new google.maps.LatLng(12.973058,77.702884), // Bangalore
+                zoom: 13,
+                center: new google.maps.LatLng(12.973174, 77.702855), // New York
                 styles: [{
                     "featureType": "water",
                     "elementType": "geometry",
@@ -431,7 +431,7 @@ $(document).ready(function() {
                 }, {
                     "elementType": "labels.icon",
                     "stylers": [{
-                        "visibility": "off"
+                        "visibility": "on"
                     }]
                 }, {
                     "featureType": "transit",
@@ -464,9 +464,9 @@ $(document).ready(function() {
             var mapElement = document.getElementById('map');
             var map = new google.maps.Map(mapElement, mapOptions);
             var marker = new google.maps.Marker({
-                position: new google.maps.(12.973058,77.702884),
+                position: new google.maps.LatLng(12.973174, 77.702855),
                 map: map,
-                title: 'Snazzy!'
+                title: 'Siddharth'
             });
         }
     }
